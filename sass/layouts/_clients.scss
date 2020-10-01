@@ -1,0 +1,34 @@
+/* Постоянные клиенты */
+.clients-logo {
+  display: flex;
+}
+
+.clients-logo__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-logo__link {
+  fill: #afb1b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border $transitions;
+
+&:hover,
+&:focus {
+  border: 1px solid $color-accent;
+}
+}
+
+.clients-logo__img {
+  transition: fill $transitions;
+
+.clients-logo__link:hover &,
+.clients-logo__link:focus & {
+  fill: $color-accent;
+}
+}

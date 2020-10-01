@@ -1,0 +1,48 @@
+/* социальные иконки */
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon__list:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: $white-color;
+
+  transition: background-color $transitions;
+
+&:hover,
+&:focus {
+  background-color: $color-accent;
+}
+}
+
+.social-icon__img {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill $transitions;
+
+.social-icon__link:hover &,
+.social-icon__link:focus & {
+  fill: $white-color;
+}
+}
+
+.social-icon__link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon__img--white {
+  fill: $white-color;
+}

@@ -1,0 +1,58 @@
+/* Особенности */
+.featyre {
+  display: flex;
+
+
+&__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
+&__text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 400;
+  color: $gray-color-one;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+}
+
+.featyre__list::before {
+  content: '';
+  display: block;
+
+  height: 120px;
+  background-color: $section-background;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.featyre__list:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.featyre__list:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.featyre__list:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.featyre__list:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+.featyre__list:not(:last-child) {
+  margin-right: 30px;
+}
+

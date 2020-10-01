@@ -1,0 +1,36 @@
+/* Чем мы занимаемся */
+.activity {
+  display: flex;
+}
+
+.activity__card {
+  position: relative;
+
+&::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+}
+}
+.activity__text {
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  bottom: 27px;
+  right: 82px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.activity__list:not(:last-child) {
+  margin-right: 30px;
+}
