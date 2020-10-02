@@ -268,10 +268,6 @@ summary {
 }
 
 /* Цвета текста */
-*, *::before, *::after {
-  outline: 2px solid red;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
@@ -530,13 +526,27 @@ body {
 
 /* section */
 .section {
-  padding-top: 0;
-  padding-bottom: 94px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
 }
 
 .section-top {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .section-top {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -595,11 +605,18 @@ body {
   content: '';
   display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   background-color: #f5f4fa;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .featyre__list::before {
+    height: 120px;
+    width: 270px;
+  }
 }
 
 .featyre__list:nth-child(1)::before {
@@ -619,7 +636,13 @@ body {
 }
 
 .featyre__list:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .featyre__list:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* Чем мы занимаемся */
@@ -684,9 +707,14 @@ body {
   margin: 0;
 }
 
+.team-card__list:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 1200px) {
   .team-card__list:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -804,7 +832,8 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
-  height: 603px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
@@ -812,6 +841,7 @@ body {
   .footer-container {
     height: 252px;
     text-align: left;
+    padding: 0;
   }
 }
 
@@ -838,8 +868,14 @@ body {
 .footer {
   display: block;
   margin-right: 0;
-  margin-top: 60px;
+  margin-top: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    margin-top: 60px;
+  }
 }
 
 .adress {
@@ -875,13 +911,19 @@ body {
 }
 
 .footer-slogan__text {
-  margin-top: 72px;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .footer-slogan__text {
+    margin-top: 72px;
+  }
 }
 
 /* footer form */
@@ -915,7 +957,7 @@ body {
   width: 200px;
   height: 50px;
   padding-left: 29px;
-  text-align: inherit;
+  text-align: left;
 }
 
 .footer-icon {

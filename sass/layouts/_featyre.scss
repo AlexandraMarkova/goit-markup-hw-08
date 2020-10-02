@@ -38,11 +38,16 @@
   display: block;
 
   height: 120px;
-  width: 270px;
+  width: 450px;
   background-color: $section-background;
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+
+  @include for-size(desktop) {
+  height: 120px;
+  width: 270px;
+}
 }
 
 .featyre__list:nth-child(1)::before {
@@ -62,6 +67,11 @@
 }
 
 .featyre__list:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
+
+ @include for-size(desktop) {
+.featyre__list:not(:last-child) {
+  margin-right: 30px;
+}}
 

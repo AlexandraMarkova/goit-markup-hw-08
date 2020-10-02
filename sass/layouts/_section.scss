@@ -1,13 +1,21 @@
 /* section */
 .section {
+  padding-top: 0px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
   padding-top: 0;
   padding-bottom: 94px;
-}
+}}
 
 .section-top {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include for-size(desktop) {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+}}
 
 .section-title {
   margin-top: 0;
