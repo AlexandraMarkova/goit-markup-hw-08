@@ -1,16 +1,25 @@
 /* card-set */
 .our-work {
+  display: block;
+
+   @include for-size(desktop) {
   display: flex;
   flex-wrap: wrap;
-}
+}}
 
 
 .our-work__list {
+  border: 1px solid #eeeeee;
+margin-right: 0;
+margin-bottom: 30px;
+
+   @include for-size(desktop) {
   width: calc((100% - 60px) / 3);
   background-color: $white-color;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  
+   }
 
 &:hover,
 &:focus {
