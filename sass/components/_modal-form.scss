@@ -1,13 +1,16 @@
 /* Form */
 .form {
-  width: 448px;
+  
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: 41px;
   margin-right: 39px;
-}
+
+  @include for-size(desktop) {
+    width: 448px;
+}}
 
 .form__caption {
   font-weight: 700;
