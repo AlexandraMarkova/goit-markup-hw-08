@@ -7,17 +7,30 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
+height: 603px;
+text-align: center;
 
+
+ @include for-size(desktop) {
   height: 252px;
+  text-align: left;
+ }
 }
 
 .footer-flex {
+  display: block;
+
+  @include for-size(desktop) {
   display: flex;
+}
 }
 
 .footer-address {
+margin: 0;
+
+ @include for-size(desktop) {
   margin-right: 70px;
-}
+}}
 
 .footer {
   display: block;
@@ -50,7 +63,12 @@
 
 /* footer-slogan */
 .footer-slogan {
+  margin: 0;
+
+  
+  @include for-size(desktop) {
   margin-right: 93px;
+  }
 
 &__text {
   margin-top: 72px;

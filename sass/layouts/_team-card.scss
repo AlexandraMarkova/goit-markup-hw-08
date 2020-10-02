@@ -1,6 +1,10 @@
 /* Члены команды */
 .team-card {
+display: block;
+
+  @include for-size(desktop) {
   display: flex;
+}
 }
 
 .team-card__list {
@@ -10,9 +14,13 @@
   border-radius: 0px 0px 4px 4px;
 
   text-align: center;
+  margin: 0;
 
+
+@include for-size(desktop) {
 &:not(:last-child) {
   margin-right: 30px;
+}
 }
 }
 

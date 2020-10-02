@@ -565,6 +565,7 @@ body {
 }
 
 .featyre__title {
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -572,6 +573,12 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 1200px) {
+  .featyre__title {
+    text-align: left;
+  }
 }
 
 .featyre__text {
@@ -660,7 +667,13 @@ body {
 
 /* Члены команды */
 .team-card {
-  display: flex;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .team-card {
+    display: flex;
+  }
 }
 
 .team-card__list {
@@ -668,10 +681,13 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  margin: 0;
 }
 
-.team-card__list:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 1200px) {
+  .team-card__list:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-card__list--content {
@@ -746,6 +762,8 @@ body {
 /* Постоянные клиенты */
 .clients-logo {
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
 }
 
 .clients-logo__list:not(:last-child) {
@@ -786,15 +804,35 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   font-style: normal;
-  height: 252px;
+  height: 603px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    height: 252px;
+    text-align: left;
+  }
 }
 
 .footer-flex {
-  display: flex;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .footer-flex {
+    display: flex;
+  }
 }
 
 .footer-address {
-  margin-right: 70px;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .footer-address {
+    margin-right: 70px;
+  }
 }
 
 .footer {
@@ -827,7 +865,13 @@ body {
 
 /* footer-slogan */
 .footer-slogan {
-  margin-right: 93px;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .footer-slogan {
+    margin-right: 93px;
+  }
 }
 
 .footer-slogan__text {
@@ -842,10 +886,10 @@ body {
 
 /* footer form */
 .footer-input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -858,12 +902,19 @@ body {
   border-radius: 4px;
 }
 
+@media (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
+}
+
 .footer-button {
   position: relative;
   width: 200px;
   height: 50px;
   padding-left: 29px;
-  padding-right: 0;
   text-align: inherit;
 }
 
