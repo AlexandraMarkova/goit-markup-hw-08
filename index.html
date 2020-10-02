@@ -118,6 +118,7 @@
                   class="picture"
                   src="./images/desktop/box1.jpg"
                   alt="Разработчик пишет backend"
+                  srcset="./images/desktop/desktop-box1@2x.jpg 2x"
                   width="370"
                   height="294"
                 />
@@ -161,13 +162,14 @@
 
           <ul class="team-card list">
             <li class="team-card__list">
-              <img
-                class="picture"
-                src="./images/desktop/img1.jpg"
-                alt="Фотография Игоря Демьяненка"
-                width="270"
-                height="260"
-              />
+                  <picture class="picture">
+                    <source srcset="./images/desktop/desktop-team1@1x.jpg 1x, ./images/desktop/desktop-team1@2x.jpg 2x " 
+                      width="270" height="260" media="(min-width: 1200px)" />
+                    <source srcset="./images/tablet/team_card_1-tab.jpg 1x, ./images/tablet/team_card_1-tab@2x.jpg 2x" width="354" height="374" media="(min-width: 768px)" />
+                    <source srcset="./images/mob/igor4mob@1x.jpg 1x, ./images//mob/igor4mob@2x.jpg 2x" width="450" height="460" media="(max-width: 767px)" />
+                    <img  src="./images/desktop/desktop-team1@1x.jpg"  alt="Фотография Игоря Демьяненка" />
+                  </picture>
+             
               <div class="team-card__list--content">
                 <h3 class="team-card__name">Игорь Демьяненко</h3>
                 <p class="team-card__position">Product Designer</p>
@@ -224,13 +226,16 @@
             </li>
 
             <li class="team-card__list">
-              <img
-                class="picture"
-                src="./images/desktop/img2.jpg"
-                alt="Фотография Ольги Репиной"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source srcset="./images/desktop/desktop-team2@1x.jpg 1x, ./images/desktop/desktop-team2@2x.jpg 2x " width="270"
+                  height="260" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/team_card_2-tab.jpg 1x, ./images/tablet/team_card_2-tab@2x.jpg 2x" width="354"
+                  height="374" media="(min-width: 768px)" />
+                <source srcset="./images/mob/olga4mob@1x.jpg 1x, ./images//mob/olga4mob@2x.jpg 2x" width="450" height="460"
+                  media="(max-width: 767px)" />
+                <img src="./images/desktop/desktop-team2@1x.jpg" alt="Фотография Ольги Репиной" />
+              </picture>
+              
               <div class="team-card__list--content">
                 <h3 class="team-card__name">Ольга Репина</h3>
                 <p class="team-card__position">Frontend Developer</p>
@@ -286,13 +291,16 @@
             </li>
 
             <li class="team-card__list">
-              <img
-                class="picture"
-                src="./images/desktop/img3.jpg"
-                alt="Фотография Николая Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source srcset="./images/desktop/desktop-team3@1x.jpg 1x, ./images/desktop/desktop-team3@2x.jpg 2x " width="270"
+                  height="260" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/team_card_3-tab.jpg 1x, ./images/tablet/team_card_3-tab@2x.jpg 2x" width="354"
+                  height="374" media="(min-width: 768px)" />
+                <source srcset="./images/mob/nikolai4mob@1x.jpg 1x, ./images//mob/nikolai4mob@2x.jpg 2x" width="450" height="460"
+                  media="(max-width: 767px)" />
+                <img src="./images/desktop/desktop-team3@1x.jpg" alt="Фотография Николая Тарасова" />
+              </picture>
+              
               <div class="team-card__list--content">
                 <h3 class="team-card__name">Николай Тарасов</h3>
                 <p class="team-card__position">Marketing</p>
@@ -348,13 +356,16 @@
             </li>
 
             <li class="team-card__list">
-              <img
-                class="picture"
-                src="./images/desktop/img4.jpg"
-                alt="Фотография Михаила Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source srcset="./images/desktop/desktop-team4@1x.jpg 1x, ./images/desktop/desktop-team4@2x.jpg 2x " width="270"
+                  height="260" media="(min-width: 1200px)" />
+                <source srcset="./images/tablet/team_card_4-tab.jpg 1x, ./images/tablet/team_card_4-tab@2x.jpg 2x" width="354"
+                  height="374" media="(min-width: 768px)" />
+                <source srcset="./images/mob/misha4mob@1x.jpg 1x, ./images//mob/misha4mob@2x.jpg 2x" width="450" height="460"
+                  media="(max-width: 767px)" />
+                <img src="./images/desktop/desktop-team4@1x.jpg" alt="Фотография Михаила Ермакова" />
+              </picture>
+             
               <div class="team-card__list--content">
                 <h3 class="team-card__name">Михаил Ермаков</h3>
                 <p class="team-card__position">UI Designer</p>
