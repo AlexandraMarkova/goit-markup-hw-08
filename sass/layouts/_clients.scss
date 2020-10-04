@@ -2,21 +2,23 @@
 .clients-logo {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 50%;
+  
+  justify-content: space-between;
 
 }
 
 
 .clients-logo__list {
   margin-bottom: 30px;
+  
 
-  &:nth-child(2n + 1) {
-margin-right: 30px;
-}
+//   &:nth-child(2n + 1) {
+// margin-right: 30px;
+// }
 
-&:nth-last-child(-n + 2){
- margin-bottom: 0;
-}
+// &:nth-last-child(-n + 2){
+//  margin-bottom: 0;
+// }
 
 @include for-size(tablet) {
   margin-right: 30px;
