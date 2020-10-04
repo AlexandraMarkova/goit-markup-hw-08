@@ -23,6 +23,12 @@ text-align: center;
 .footer-flex {
   display: block;
 
+   @include for-size(tablet) {
+     display: flex;
+     flex-wrap: wrap; 
+     justify-content: space-around;
+   }
+
   @include for-size(desktop) {
   display: flex;
 }
@@ -71,7 +77,7 @@ margin: 0;
 .footer-slogan {
   margin: 0;
 
-  
+
   @include for-size(desktop) {
   margin-right: 93px;
   }
@@ -85,6 +91,10 @@ margin: 0;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+ @include for-size(tablet) {
+     margin-top: 0;
+   }
 
  @include for-size(desktop) {
     margin-top: 72px;
