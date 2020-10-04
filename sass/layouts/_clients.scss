@@ -3,26 +3,50 @@
   display: flex;
   flex-wrap: wrap;
   flex-basis: 50%;
+
 }
 
-.clients-logo__list:not(:last-child) {
-  margin-right: 30px;
+
+.clients-logo__list {
+  margin-bottom: 30px;
+
+  &:nth-child(2n + 1) {
+margin-right: 30px;
 }
+
+&:nth-last-child(-n + 2){
+ margin-bottom: 0;
+}
+
+@include for-size(desktop) {
+&:not(:last-child) {
+  margin-right: 30px;
+   margin-bottom: 0;
+}}
+}
+
 
 .clients-logo__link {
   fill: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border $transitions;
+  margin-right: 0;
+
+ 
+  @include for-size(desktop) {
+    width: 170px;}
 
 &:hover,
 &:focus {
   border: 1px solid $color-accent;
+
 }
 }
 

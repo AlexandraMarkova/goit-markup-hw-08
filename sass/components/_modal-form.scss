@@ -103,19 +103,24 @@
 
 .form__checkbox {
   display: inline-block;
-
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-  text-align: center;
 
+  text-align: center;
   padding: 0;
-  margin-left: 12px;
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   color: $gray-color-one;
-}
+
+  @include for-size(desktop) {
+  font-size: 14px;
+  line-height: 1.7;
+  
+  margin-left: 12px;
+  margin-bottom: 30px; 
+}}
 
 .checkbox {
   position: absolute;
