@@ -564,9 +564,16 @@ body {
   display: block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .featyre {
     display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1200px) {
+  .featyre {
+    flex-wrap: unset;
   }
 }
 
@@ -590,11 +597,24 @@ body {
 .featyre__text {
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 0;
   font-weight: 400;
   color: #757575;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+@media (min-width: 768px) {
+  .featyre__text {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featyre__text {
+    width: 270px;
+  }
 }
 
 .featyre__list::before {
@@ -606,6 +626,14 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .featyre__list::before {
+    height: 120px;
+    width: 354px;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -633,6 +661,22 @@ body {
 
 .featyre__list:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .featyre__list:not(:last-child):nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+.featyre__list {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .featyre__list:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 @media (min-width: 1200px) {

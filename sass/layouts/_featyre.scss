@@ -1,10 +1,15 @@
 /* Особенности */
 .featyre {
   display: block;
+  
 
-  @include for-size(desktop) {
+  @include for-size(tablet) {
   display: flex;
-}
+  flex-wrap: wrap;
+
+   @include for-size(desktop) {
+     flex-wrap: unset;
+}}
 
 &__title {
   text-align: center;
@@ -24,14 +29,23 @@
 &__text {
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 0;
 
   font-weight: 400;
   color: $gray-color-one;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
+   @include for-size(desktop) {
+    width: 270px;
+}}
 }
-}
+
 
 .featyre__list::before {
   content: '';
@@ -43,6 +57,13 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+
+  @include for-size(tablet) {
+    height: 120px;
+  width: 354px;
+  margin-right: 0; 
+
+}
 
   @include for-size(desktop) {
   height: 120px;
@@ -68,10 +89,30 @@
 
 .featyre__list:not(:last-child) {
   margin-bottom: 30px;
+
+   @include for-size(tablet) {
+     &:nth-last-child(-n + 2){
+ margin-bottom: 0;
+}}
 }
 
+.featyre__list{
+  margin: 0;
+
+ @include for-size(tablet) {
+   &:nth-child(2n + 1) {
+margin-right: 30px;
+}}
+
  @include for-size(desktop) {
-.featyre__list:not(:last-child) {
+&:not(:last-child) {
   margin-right: 30px;
 }}
+
+}
+
+//  @include for-size(desktop) {
+// .featyre__list:not(:last-child) {
+//   margin-right: 30px;
+// }}
 
