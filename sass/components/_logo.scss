@@ -1,14 +1,24 @@
 /* logo */
 .logo {
-  margin-right: 93px;
+  position: relative;
+  // margin-right: 276px;
   font-family: $logo-font;
   font-weight: 700;
   color: $black-color-one;
   text-decoration: none;
 
-  font-size: 26px;
-  line-height: 1.2;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
+
+  @include for-size(desktop) {
+     margin-right: 93px;
+     font-size: 26px;
+     line-height: 1.2;
+  }
 
 &__text-web {
   color: $color-accent;
