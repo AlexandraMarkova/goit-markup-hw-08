@@ -2,6 +2,12 @@
 .team-card {
 display: block;
 
+
+@include for-size(tablet) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
   @include for-size(desktop) {
   display: flex;
 }
@@ -18,7 +24,14 @@ display: block;
 
 &:not(:last-child) {
   margin-bottom: 30px;
+
+   @include for-size(tablet) {
+     &:nth-last-child(-n + 2){
+ margin-bottom: 0;
+}    &:nth-child(2n + 1) {
+margin-right: 30px;
 }
+}}
 
 
 @include for-size(desktop) {
@@ -26,8 +39,7 @@ display: block;
   margin-right: 30px;
   margin-bottom: 0;
 }
-}
-}
+}}
 
 .team-card__list--content {
   padding-top: 30px;
