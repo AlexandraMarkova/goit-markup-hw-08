@@ -1169,10 +1169,11 @@ body {
   display: block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .our-work {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -1180,6 +1181,12 @@ body {
   border: 1px solid #eeeeee;
   margin-right: 0;
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .our-work__list {
+    width: calc((100% - 30px) / 2);
+  }
 }
 
 @media (min-width: 1200px) {

@@ -2,16 +2,20 @@
 .our-work {
   display: block;
 
-   @include for-size(desktop) {
+@include for-size(tablet) {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }}
-
 
 .our-work__list {
   border: 1px solid #eeeeee;
 margin-right: 0;
 margin-bottom: 30px;
+
+ @include for-size(tablet) {
+  width: calc((100% - 30px) / 2); 
+ }
 
    @include for-size(desktop) {
   width: calc((100% - 60px) / 3);
