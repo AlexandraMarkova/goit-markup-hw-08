@@ -82,6 +82,10 @@ position: relative;
     &__icon-cross{
       display: none;
     }
+
+    &:hover,
+&:focus {
+  fill: $color-accent;}
 }
 
 .header-button.is-open .header-button__icon-cross{

@@ -435,6 +435,10 @@ img {
   display: none;
 }
 
+.header-button:hover, .header-button:focus {
+  fill: #2196f3;
+}
+
 .header-button.is-open .header-button__icon-cross {
   display: block;
 }
