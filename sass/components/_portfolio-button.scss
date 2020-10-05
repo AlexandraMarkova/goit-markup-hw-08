@@ -16,14 +16,16 @@
   margin-bottom: 40px;
   justify-content: left;
 
+
+@include for-size(tablet) {
+  justify-content: center;
+}
    @include for-size(desktop) {
      margin-bottom: 50px;
-  justify-content: center;
    }
 }
 
 .button-group__btn {
-  
   font-weight: 500;
   background-color: $portfolio-button-background;
   color: $black-color-two;
