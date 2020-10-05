@@ -16,11 +16,11 @@
       @content;
     }
   } 
-//   @else if $range == tablet-only {
-//     @media (max-width: #{$tablet - 1}) {
-//       @content;
-//     }
-//   } 
+  @else if $range == tablet-only {
+    @media (max-width: #{$tablet - 1}) {
+      @content;
+    }
+  } 
   @else if $range == desktop {
     @media (min-width: $desktop) {
       @content;
