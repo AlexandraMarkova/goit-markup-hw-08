@@ -1074,6 +1074,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    padding: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .footer {
     margin-top: 60px;
