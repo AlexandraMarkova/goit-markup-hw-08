@@ -359,6 +359,7 @@ img {
   position: relative;
   align-items: center;
   display: flex;
+  justify-content: space-between;
 }
 
 .site-nav {
@@ -425,7 +426,6 @@ img {
 
 .header-button {
   display: inline-flex;
-  margin-left: 274px;
   padding: 0;
   border: none;
   background-color: #ffffff;
