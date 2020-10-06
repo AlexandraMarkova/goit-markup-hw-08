@@ -22,6 +22,16 @@ display: block;
   text-align: center;
   margin: 0;
 
+  height: 622px;
+
+   @include for-size(tablet) {
+      height: 536px;
+   }
+
+  @include for-size(desktop) {
+    height: 428px;
+  }
+
 &:not(:last-child) {
   margin-bottom: 30px;
 

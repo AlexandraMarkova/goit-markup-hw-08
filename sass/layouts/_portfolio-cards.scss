@@ -5,23 +5,32 @@
 @include for-size(tablet) {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: -15px;
+  // justify-content: space-between;
 }}
 
 .our-work__list {
   border: 1px solid #eeeeee;
 margin-right: 0;
-margin-bottom: 30px;
+margin-bottom: 30px; 
+background-color: $white-color;
+height: 404px;
 
- @include for-size(tablet) {
-  width: calc((100% - 30px) / 2); 
- }
+@include for-size(tablet) {
+// height: 404px;
+width: 354px;
+margin: 15px;
+
+  // width: calc((100% - 30px) / 2); 
+}
 
    @include for-size(desktop) {
-  width: calc((100% - 60px) / 3);
-  background-color: $white-color;
-  margin-right: 30px;
-  margin-bottom: 30px;
+     width: 370px;
+  //    height: 404px;
+  // width: calc((100% - 60px) / 3);
+ 
+  // margin-right: 30px;
+  // margin-bottom: 30px;
   
    }
 
@@ -49,7 +58,7 @@ margin-bottom: 30px;
 .our-work__title {
   padding-top: 20px;
   padding-left: 24px;
-  padding-bottom: 4px;
+  // padding-bottom: 4px;
   margin-top: 0;
   margin-bottom: 0;
 

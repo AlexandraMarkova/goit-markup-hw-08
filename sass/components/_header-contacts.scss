@@ -4,6 +4,7 @@ display: block;
 margin-top: 60px;
 
 @include for-size(tablet) {
+  // display: block;
  margin-bottom: 21px;
     margin-top: 21px;
     margin-left: 84px;
@@ -29,7 +30,10 @@ margin-top: 60px;
    }
 
    @include for-size(tablet) {
-      margin-bottom:0;}
+     display: block;
+     text-align: left;
+      margin-bottom:0;
+    }
 
 
 @include for-size(desktop) {
