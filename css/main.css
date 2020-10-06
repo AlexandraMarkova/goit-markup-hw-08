@@ -272,6 +272,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #212121;
+  overflow-x: hidden;
 }
 
 body.modal-open {
@@ -375,16 +376,6 @@ img {
 @media (min-width: 768px) {
   .site-nav {
     display: flex;
-  }
-  .site-nav__list:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .site-nav {
-    display: flex;
-    justify-content: space-between;
   }
   .site-nav__list:not(:last-child) {
     margin-right: 50px;
@@ -498,6 +489,7 @@ img {
     left: 0;
     width: 100%;
     height: 453px;
+    z-index: 2;
   }
 }
 
@@ -1132,12 +1124,6 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
-  .footer-flex {
-    display: flex;
-  }
-}
-
 .footer-address {
   margin: 0;
 }
@@ -1399,6 +1385,18 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  .our-work__list--mod {
+    height: 440px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-work__list--mod {
+    height: 404px;
+  }
+}
+
 .our-work__title {
   padding-top: 20px;
   padding-left: 24px;
@@ -1409,6 +1407,18 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+}
+
+@media (min-width: 768px) {
+  .our-work__title {
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .our-work__title {
+    padding-right: 0;
+  }
 }
 
 .our-work__text {

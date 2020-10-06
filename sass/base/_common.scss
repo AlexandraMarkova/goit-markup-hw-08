@@ -5,10 +5,12 @@ body {
   font-family: $basic-font;
   background-color: $white-color;
   color: $black-color-two;
+  overflow-x: hidden;
 }
 
 body.modal-open {
   overflow: hidden;
+  
 }
 
 .container {
