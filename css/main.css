@@ -1474,10 +1474,10 @@ img {
 
 @media (max-width: 479px) {
   .overlay__text {
-    top: 10px;
-    bottom: 10px;
-    right: 10px;
-    left: 10px;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
   }
 }
 
